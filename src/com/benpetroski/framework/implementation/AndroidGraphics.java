@@ -6,11 +6,11 @@ import java.io.InputStream;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
-import android.graphics.BitmapFactory.Options;
-import android.graphics.Paint.Style;
 import android.graphics.BitmapFactory;
+import android.graphics.BitmapFactory.Options;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Paint.Style;
 import android.graphics.Rect;
 
 import com.benpetroski.framework.Graphics;
@@ -113,16 +113,28 @@ public class AndroidGraphics implements Graphics{
 		canvas.drawText(text, x, y, paint);
 	}
 
+	public void drawScaledImage(Image Image, int x, int y, int width, int height, int srcX, int srcY, int srcWidth, int srcHeight) {
+		srcRect.left = srcX;
+		srcRect.top = srcY;
+		srcRect.right = srcX + srcWidth;
+		srcRect.bottom = srcY + srcHeight;
+		
+		dstRect.left = x;
+		dstRect.top = y;
+		dstRect.right = x + width;
+		dstRect.bottom = y + height;
+		
+		canvas.drawBitmap(((AndroidImage)Image).bitmap, srcRect, dstRect, null);
+	}
+	
 	@Override
 	public int getWidth() {
-		// TODO Auto-generated method stub
-		return 0;
+		return frameBuffer.getWidth();
 	}
 
 	@Override
 	public int getHeight() {
-		// TODO Auto-generated method stub
-		return 0;
+		return frameBuffer.getHeight();
 	}
 
 	@Override
