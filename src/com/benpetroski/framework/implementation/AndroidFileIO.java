@@ -13,7 +13,9 @@ import android.content.res.AssetManager;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 
-public class AndroidFileIO {
+import com.benpetroski.framework.FileIO;
+
+public class AndroidFileIO implements FileIO {
 	Context context;
 	AssetManager assets;
 	String externalStoragePath;

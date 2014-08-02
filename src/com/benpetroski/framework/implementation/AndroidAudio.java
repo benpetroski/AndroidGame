@@ -23,23 +23,23 @@ public class AndroidAudio implements Audio {
 	}
 	
 	@Override
-	public Music createMusic(String filename) {
+	public Music createMusic(String fileName) {
 		try {
 			AssetFileDescriptor assetDescriptor = assets.openFd(fileName);
 			return new AndroidMusic(assetDescriptor);
 		} catch (IOException e) {
-			throw new RuntimeException("Couldn't load music '" + filename + "'");
+			throw new RuntimeException("Couldn't load music '" + fileName + "'");
 		}
 	}
 	
 	@Override
-	public Sound createSound(String filename) {
+	public Sound createSound(String fileName) {
 		try {
 			AssetFileDescriptor assetDescriptor = assets.openFd(fileName);
 			int soundId = soundPool.load(assetDescriptor, 0);
 			return new AndroidSound(soundPool, soundId);
 		} catch (IOException e) {
-			throw new RuntimeException("Couldn't load sound '" + filename + "'");
+			throw new RuntimeException("Couldn't load sound '" + fileName + "'");
 		}
 	}
 }

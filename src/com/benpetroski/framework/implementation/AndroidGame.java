@@ -25,7 +25,7 @@ public abstract class AndroidGame extends Activity implements Game{
 	Input input;
 	FileIO fileIO;
 	Screen screen;
-	WakeLock wakelock;
+	WakeLock wakeLock;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

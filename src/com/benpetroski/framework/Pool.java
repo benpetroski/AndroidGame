@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Pool<T> {
 	public interface PoolObjectFactory<T>{
-		public T createObject;
+		public T createObject();
 	}
 	
 	private final List<T> freeObjects;

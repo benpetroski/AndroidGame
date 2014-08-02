@@ -90,7 +90,7 @@ public class AndroidGraphics implements Graphics{
 		canvas.drawRect(x, y, x+width - 1, y + height - 1, paint);
 	}
 
-	public void drawImage(Image image, int x, int y, int srcX, int srcY,
+	public void drawImage(Image Image, int x, int y, int srcX, int srcY,
 			int srcWidth, int srcHeight) {
 		srcRect.left = srcX;
 		srcRect.top = srcY;

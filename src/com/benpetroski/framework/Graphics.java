@@ -1,6 +1,6 @@
 package com.benpetroski.framework;
 
-import android.media.Image;
+import android.graphics.Paint;
 
 public interface Graphics {
 	public static enum ImageFormat {
