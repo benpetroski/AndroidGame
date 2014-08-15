@@ -1,49 +1,42 @@
 package com.benpetroski.bnptrskFirstAndroidGame;
 
 import com.benpetroski.framework.Game;
+import com.benpetroski.framework.Graphics;
 import com.benpetroski.framework.Screen;
+import com.benpetroski.framework.Graphics.ImageFormat;
 
 public class SplashLoadingScreen extends Screen {
 
 	public SplashLoadingScreen(Game game) {
 		super(game);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void update(float deltaTime) {
-		// TODO Auto-generated method stub
-
+		Graphics g = game.getGraphics();
+		Assets.splash = g.newImage("splash.jpg", ImageFormat.RGB565);
+		
+		game.setScreen(new LoadingScreen(game));
 	}
 
 	@Override
 	public void paint(float deltaTime) {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void resume() {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void backButton() {
-		// TODO Auto-generated method stub
-
 	}
 
 }
