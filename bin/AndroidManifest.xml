@@ -16,7 +16,7 @@
         android:icon="@drawable/icon"
         android:label="RobotGame" >
         <activity 
-            android:name=".SampleGame"
+            android:name="com.benpetroski.bnptrskFirstAndroidGame.SampleGame"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="RobotGame"
             android:screenOrientation="landscape" >
