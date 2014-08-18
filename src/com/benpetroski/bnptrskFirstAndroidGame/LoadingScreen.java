@@ -14,7 +14,7 @@ public class LoadingScreen extends Screen {
 	@Override
 	public void update(float deltaTime) {
 		Graphics g = game.getGraphics();
-		Assets.menu = g.newImage("menu.jpg", ImageFormat.RGB565);
+		Assets.menu = g.newImage("menu.png", ImageFormat.RGB565);
 		Assets.background = g.newImage("background.png", ImageFormat.RGB565);
 		Assets.character = g.newImage("character.png", ImageFormat.ARGB4444);
 		Assets.character2 = g.newImage("character2.png", ImageFormat.ARGB4444);
@@ -29,12 +29,12 @@ public class LoadingScreen extends Screen {
 		Assets.heliboy5 = g.newImage("heliboy5.png", ImageFormat.ARGB4444);
 		
 		Assets.tiledirt = g.newImage("tiledirt.png", ImageFormat.RGB565);
-		Assets.tilegrassTop = g.newImage("tilegrassTop.png", ImageFormat.RGB565);
-		Assets.tilegrassBot = g.newImage("tilegrassBot.png", ImageFormat.RGB565);
-		Assets.tilegrassLeft = g.newImage("tilegrassLeft.png", ImageFormat.RGB565);
-		Assets.tilegrassRight = g.newImage("tilegrassRight.png", ImageFormat.RGB565);
+		Assets.tilegrassTop = g.newImage("tilegrasstop.png", ImageFormat.RGB565);
+		Assets.tilegrassBot = g.newImage("tilegrassbot.png", ImageFormat.RGB565);
+		Assets.tilegrassLeft = g.newImage("tilegrassleft.png", ImageFormat.RGB565);
+		Assets.tilegrassRight = g.newImage("tilegrassright.png", ImageFormat.RGB565);
 		
-		Assets.button = g.newImage("button.png", ImageFormat.RGB565);
+		Assets.button = g.newImage("button.jpg", ImageFormat.RGB565);
 		
 		//Loading a sound if there was one:
 		//Assets.click = game.getAudio().createSound("explode.ogg");

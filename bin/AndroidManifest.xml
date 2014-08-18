@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.benpetroski.androidgame"
+    package="com.benpetroski.bnptrskFirstAndroidApp"
     android:versionCode="2"
     android:versionName="2.0" >
 
