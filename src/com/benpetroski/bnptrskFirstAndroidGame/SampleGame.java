@@ -5,11 +5,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-
-
 import android.util.Log;
 
-import com.benpetroski.androidgame.R;
+import com.benpetroski.bnptrskFirstAndroidApp.R;
 import com.benpetroski.framework.Screen;
 import com.benpetroski.framework.implementation.AndroidGame;
 
